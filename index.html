@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BootstrapHomeWork</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* header */
+        .btn-success {
+            background: #4BA87D;
+        }
+
+        .border-success {
+            border-color: #4BA87D !important;
+        }
+
+        .text-success {
+            color: #4BA87D !important;
+        }
+
+        /* section1 */
+        .section1-bg {
+            width: 100%;
+            height: 600px;
+            background: url("images/bg1.png");
+        }
+
+        .section1-size {
+            width: 380px;
+            padding-top: 180px;
+        }
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 900;
+        }
+
+        .btn-font {
+            font-family: "Raleway", sans-serif;
+            font-weight: 900;
+        }
+
+        .section1-p {
+            font-family: "Raleway", sans-serif;
+        }
+
+        @media (max-width:576px) {
+            .section1-bg {
+                background: #FFF;
+                height: 555px;
+            }
+
+            .section1-size {
+                padding-top: 80px;
+            }
+
+            .section-1-img-intro {
+                margin-top: -120px;
+            }
+
+            .section1-fz {
+                font-size: 47px;
+                font-weight: 900;
+                text-shadow: 0 5px 5px #aaa;
+            }
+        }
+
+        @media (min-width:576px) {
+            .section-1-img-intro {
+                width: 600px;
+                height: 400px;
+                position: absolute;
+                top: 127px;
+                left: 615px;
+            }
+        }
+
+        /* section-2 */
+        .section-2-bg {
+            background: url("images/bg.png");
+            background-size: cover;
+        }
+
+        .section-2-h1 {
+            font-size: 60px;
+        }
+
+        .art2-right {
+            margin-left: auto;
+        }
+
+        .person-name {
+            position: relative;
+            left: 1rem;
+            bottom: -18rem;
+        }
+
+        .person-1 {
+            background: url("images/artilce3.png");
+            background-size: cover;
+            height: 20vw;
+        }
+
+        .person-2 {
+            background: url("images/artilce4.png");
+            background-size: cover;
+            height: 20vw;
+        }
+
+        .person-3 {
+            background: url("images/artilce5.png");
+            background-size: cover;
+            height: 20vw;
+        }
+
+        input::placeholder {
+            font-family: "Raleway";
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 1.0499999523162842px;
+            text-align: left;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        @media (max-width:576px) {
+            .section-2-bg {
+                background: url("images/bg2.png");
+                background-size: cover;
+            }
+
+            .section-2-h1 {
+                font-size: 30px;
+            }
+
+            .section-2-bg {
+                background: url("images/bg2.png");
+                background-size: cover;
+            }
+
+            .person-name {
+                position: relative;
+                left: 1rem;
+                bottom: -9rem;
+            }
+
+            .person-1 {
+                height: 50vw;
+
+            }
+
+            .person-2 {
+                height: 50vw;
+                margin-top: 20px;
+            }
+
+            .person-3 {
+                height: 50vw;
+                margin-top: 20px;
+            }
+
+            .thanks-email {
+                position: relative;
+                left: 2.5rem;
+                bottom: 5.5rem;
+            }
+
+            input::placeholder {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+
+        /* footer */
+        .footer-size {
+            font-family: "Raleway";
+            font-size: 10px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .footer-p {
+            font-family: "Raleway";
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: left;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        @media (max-width:576px) {
+            .started-today {
+                font-size: 53px;
+            }
+
+            .footer-top {
+                margin-top: 30px;
+            }
+
+            .footer-size{
+                font-size: 12px;
+                font-weight: 700;
+            }
+            .footer-p{
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-top bg-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col col-lg-6 col-7 py-3">
+                    <img src="images/ninja.png" alt="">
+                </div>
+                <div class="col col-lg-1 py-4 d-none d-sm-block">
+                    <a class="text-decoration-none link-dark px-1 fw-bold " href="">FEATURES</a>
+                    <div class="border-4 border-bottom border-success "></div>
+                </div>
+                <div class="col col-lg-1 py-4 d-none d-sm-block">
+                    <a class="text-decoration-none link-dark px-1 fw-bold " href="">PRICING</a>
+                    <div class="border-4 border-bottom border-success "></div>
+                </div>
+                <div class="col col-lg-1 py-4 d-none d-sm-block">
+                    <a class="text-decoration-none link-dark px-1 fw-bold " href="">SERVICES</a>
+                    <div class="border-4 border-bottom border-success "></div>
+                </div>
+                <div class="col col-lg-1 py-4 d-none d-sm-block">
+                    <a class="text-decoration-none link-dark px-1 fw-bold " href="">PARTERS</a>
+                    <div class="border-4 border-bottom border-success "></div>
+                </div>
+                <div class="col col-lg-2 py-3">
+                    <button type="button" class="btn btn-success border rounded-0 fw-bold">SIGN UP FREE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 z-1">
+                    <h1 class="section1-size ms-4 section1-fz">Create Stunning</h1>
+                    <h1 class="ms-4 section1-fz">Email Campaigns</h1>
+                </div>
+                <div class="col-12">
+                    <img class="img-fluid section-1-img-intro" src="images/introduction.png" alt="">
+                </div>
+                <div class="col-lg-12 col ms-4 fw-bold z-1 section1-p">
+                    <p>Create and launch email campaigns that captivate<br class="d-sm-block d-none"> your customers
+                        in just a few clicks.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-2 col-6">
+                            <button type="button"
+                                class="btn btn-sm btn-success fw-bold rounded-0 px-5 py-3 ms-4 text-nowrap btn-font">TRY
+                                NOW</button>
+                        </div>
+                        <div class="col-lg-4 col-5 z-1">
+                            <button type="button"
+                                class="btn btn-sm btn-success fw-bold border-2 rounded-0 bg-white text-success ms-2 px-5 py-3 text-nowrap btn-font">GET
+                                A DEMO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2-bg">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center pt-5">
+                <div class="col-lg-10 col-12 ">
+                    <div class="card text-white">
+                        <img src="images/main-img.png" class="card-img" alt="Card image">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h1 class="card-title section-2-h1 ">Reach More Customers</h1>
+                            <button
+                                class="btn btn-sm btn-success fw-bold rounded-0 bg-white text-success ms-3 px-5 py-3 btn-font mt-5">LEARN
+                                HOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 col-8 py-5">
+                    <div class="card rounded-0">
+                        <img src="images/artilce1.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text text-start fw-bold">Launch campaigns but also find<br>new customers. Our
+                                unique<br>platform handles campaigns<br>from start to end.</p>
+                            <a href="" class="text-decoration-none btn-font text-success">Learn More ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-8 art2-right">
+                    <br class="d-sm-block d-none">
+                    <br class="d-sm-block d-none">
+                    <br class="d-sm-block d-none">
+                    <br class="d-sm-block d-none">
+                    <div class="card rounded-0">
+                        <img class="card-img-top rounded-0" src="images/artilce2.png" alt="">
+                        <p class="card-text text-start fw-bold p-4">Start building and sharing with your team today.
+                            NinjaMail is renowned for its industry
+                            leading team collaboration tools.</p>
+                        <a href="" class="text-decoration-none btn-font text-success px-4 py-2">Learn More ></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 text-md-start">
+                    <br class="d-sm-block d-none">
+                    <br class="d-sm-block d-none">
+                    <br class="d-sm-block d-none">
+                    <br class="d-sm-block d-none">
+                    <div class="text-align-center align-items-sm-center">
+                        <h1 class=" py-md-5 px-3">
+                            <br>
+                            The source for proven , engaging email campaigns
+                        </h1>
+                        <p class="section1-p p-3">
+                            Whether you’re a startup, small
+                            business, e-commerce store, or
+                            want to promote your app, NinjaMail
+                            has the feature set tailored for
+                            your business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-4">
+                    <div class="person-1 position-relative">
+                        <div class="person-name z-1">
+                            <h1 class="text-white">Frankie</h1>
+                            <p class="text-white">Member since 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-4">
+                    <div class="person-2 position-relative">
+                        <div class="person-name z-1">
+                            <h1 class="text-white">Camile</h1>
+                            <p class="text-white">Member since 2012</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-4">
+                    <div class="person-3 position-relative">
+                        <div class="person-name z-1">
+                            <h1 class="text-white">Elayne</h1>
+                            <p class="text-white">Member since 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-8">
+                    <h1>
+                        Learn how others are reaching their
+                    </h1>
+                    <h1>
+                        &nbsp;&nbsp;audience easier than ever before.
+                    </h1>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <input class="form-control mt-5 section1-p" placeholder="Enter your email">
+                        </div>
+                        <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                            <a href="">
+                                <div class="btn btn-lg btn-success rounded-0 fw-bold mt-5">
+                                    JOIN OUR LIST
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-8 d-flex justify-content-start">
+                    <p class="px-2 text-success email-text thanks-email">
+                        Thanks! Email received.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <h1 class="mb-5">
+                        All the best brands <br>
+                        already use us.
+                    </h1>
+                </div>
+                <div class="col-6 col-lg d-flex justify-content-center align-items-center mt-4 order-md-2"><img
+                        class="img-fluid" src="images/last-icom2.png" alt=""></div>
+                <div class="col-6 col-md d-flex justify-content-center align-items-center mt-4 order-md-5"><img
+                        class="img-fluid" src="images/last-icom5.png" alt=""></div>
+                <div class="col-6 col-lg d-flex justify-content-center align-items-center mt-4 order-md-1"><img
+                        class="img-fluid" src="images/last-icom1.png" alt=""></div>
+                <div class="col-6 col-lg d-flex justify-content-center align-items-center mt-4 order-md-4"><img
+                        class="img-fluid" src="images/last-icom4.png" alt=""></div>
+                <div class="col-12 col-lg d-flex justify-content-center align-items-center mt-4 order-md-3"><img
+                        class="img-fluid" src="images/last-icom3.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <footer class="btn-success text-center">
+        <h1 class="text-white py-5 started-today">Get started today!</h1>
+        <a class="btn btn-lg border-3 text-success rounded-0 fw-bold px-4 py-3 mb-5  bg-white" href="">
+            PICK A PLAN</a>
+    </footer>
+    <footer class="bg-white">
+        <div class="container py-5 ">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-5">
+                    <img class="img-fluid" src="images/ninja.png" alt="">
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-12 footer-p">Features</div>
+                                <div class="col-12 footer-p">Pricing</div>
+                                <div class="col-12 footer-p">Services</div>
+                                <div class="col-12 footer-p">Partners</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-12 footer-p">About Us</div>
+                                <div class="col-12 footer-p">Tutorials</div>
+                                <div class="col-12 footer-p">Resources</div>
+                                <div class="col-12 footer-p">Help Center</div>
+                                <div class="col-12 footer-p">Templates</div>
+                                <div class="col-12 footer-p">Case Studies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-12 footer-p">Medium</div>
+                                <div class="col-12 footer-p">Twitter</div>
+                                <div class="col-12 footer-p">Facebook</div>
+                                <div class="col-12 footer-p">Instagram</div>
+                                <div class="col-12 footer-p">LinkedIn</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-12 footer-p">Contact Us</div>
+                                <div class="col-12 footer-p">Slack</div>
+                                <div class="col-12 footer-p">Jobs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-8 footer-size ">NinjaMail is a sample project for Quest AI. <br> © 2019 Quest
+                    AI, All
+                    rights reserved.</div>
+                <div class="col-8 col-md-2 footer-size footer-top footer-p">Terms & Conditions</div>
+                <div class="col-8 col-md-2 footer-size footer-p">Privacy Policy</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
